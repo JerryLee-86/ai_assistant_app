@@ -132,4 +132,25 @@ if st.button("🧠 開始分析", type="primary"):
         st.warning("⚠️ 請先在上面的文本框中貼上需要分析的 AI 回應。")
 
 st.markdown("---")
+with st.sidebar:
+    st.header("支持開發者 💪") # 側邊欄標題
+    st.markdown("如果這個小工具對您有幫助，歡迎請我喝杯咖啡，支持我持續改進！")
+
+    # 使用 BMC 提供的官方按鈕圖片 (推薦)
+    bmc_button_code = """
+    <a href="https://buymeacoffee.com/jerrylee86" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 180px !important;" >
+    </a>
+    """
+    st.markdown(bmc_button_code, unsafe_allow_html=True)
+
+    # 或者使用 Ko-fi (替換連結和圖片 URL)
+    # kofi_button_code = """
+    # <a href='https://ko-fi.com/yourusername' target='_blank'>
+    # <img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+    # </a>
+    # """
+    # st.markdown(kofi_button_code, unsafe_allow_html=True)
+
+    st.markdown("您的支持是最大的動力！❤️")
 st.caption("提示：Grok 的分析結果依賴於其對輸入文本和指令的理解。")
